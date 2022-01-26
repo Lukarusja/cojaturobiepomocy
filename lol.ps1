@@ -17,6 +17,3 @@ $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + ";C:\Users\wladadmin\AzCopy", "User")
 
 Start-Sleep -s 3
-
-azcopy login --identity
-azcopy copy "https://wladkeysstorage.blob.core.windows.net/keys/*" "C:\Users\wladadmin" --recursive=true
